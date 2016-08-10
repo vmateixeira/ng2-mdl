@@ -1,0 +1,8 @@
+<div id="mdl-badge" *ngIf="icon" mdl [ngClass]="{
+    'mdl-badge': true,
+    'material-icons': icon,
+    'mdl-badge--overlap': icon
+    }" attr.data-badge="{{overlapText}}">{{text}}</div>
+<span id="mdl-badge" mdl *ngIf="!icon" [ngClass]="{
+    'mdl-badge': true
+    }" attr.data-badge="{{overlapText}}">{{text}}</span>

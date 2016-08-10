@@ -1,0 +1,15 @@
+<button mdl [ngClass]="{
+    'mdl-button mdl-js-button': true,
+    'mdl-button--fab': fab || miniFab,
+    'mdl-button--mini-fab': miniFab,
+    'mdl-button--raised': raised,
+    'mdl-button--icon': icon,
+    'mdl-button--primary': primary,
+    'mdl-button--accent': accent,
+    'mdl-js-ripple-effect': ripple,
+    'mdl-button--colored': colored
+    }"
+    [disabled]="disabled">
+    <i *ngIf="fab || miniFab || icon" [ngClass]="{ 'material-icons': true }">{{text}}</i>
+    <span *ngIf="!fab && !miniFab && !icon">{{text}}</span>
+</button>

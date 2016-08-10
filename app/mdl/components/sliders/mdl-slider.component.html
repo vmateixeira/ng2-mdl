@@ -1,0 +1,6 @@
+<p [ngStyle]="{ 'width': width }">
+    <input mdl #sliderChild [ngClass]="{
+    'mdl-slider': true,
+    'mdl-js-slider': true
+    }" type="range" attr.min="{{min}}" attr.max="{{max}}" attr.value="{{value}}" attr.step="{{step}}" [disabled]="disabled">
+</p>
