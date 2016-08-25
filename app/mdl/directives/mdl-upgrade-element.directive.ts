@@ -1,21 +1,17 @@
-import { Directive, ElementRef, OnInit, AfterViewInit } from  '@angular/core';
+import { Directive, ElementRef, AfterViewInit } from  '@angular/core';
 
 declare var componentHandler: any;
 
 @Directive({
     selector: '[mdl]'
 })
-export class MdlUpgradeElementDirective implements OnInit, AfterViewInit {
+export class MdlUpgradeElementDirective implements AfterViewInit {
     
     constructor(private elementRef: ElementRef) {
-        
+
     }
 
-    ngOnInit() {
-        componentHandler.upgradeElement(this.elementRef.nativeElement);
-    }
-    
     ngAfterViewInit() {
-        //componentHandler.upgradeElement(this.elementRef.nativeElement);
+        componentHandler.upgradeElement(this.elementRef.nativeElement);
     }
 }
