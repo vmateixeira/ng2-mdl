@@ -1,0 +1,7 @@
+<label mdl [ngClass]="{
+    'mdl-radio': true,
+    'mdl-js-radio': true,
+    'mdl-js-ripple-effect': ripple }" attr.for="{{id}}">
+  <input type="radio" [id]="id" class="mdl-radio__button" [name]="name" [value]="value" [checked]="checked" [disabled]="disabled">
+  <span class="mdl-radio__label">{{text}}</span>
+</label>

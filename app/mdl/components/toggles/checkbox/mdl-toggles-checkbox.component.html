@@ -1,0 +1,7 @@
+<label mdl [ngClass]="{
+    'mdl-checkbox': true,
+    'mdl-js-checkbox': true,
+    'mdl-js-ripple-effect': ripple }" attr.for="{{id}}">
+    <input type="checkbox" [id]="id" [ngClass]="{ 'mdl-checkbox__input': true }" [checked]="checked" [disabled]="disabled">
+    <span [ngClass]="{ 'mdl-checkbox__label': true }">{{text}}</span>
+</label>
